@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeathApp</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <link href="stylesheet" src="assets/styles/style.css">
+</head>
+<body>
+    <div class="container-fluid" id="header">
+        <div class="row navbar bg-dark text-light">
+            <div class="col-12 text-center">
+                <h1>Weather Dashboard</h1>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-4">
+            <div class="">
+                <form id="">
+                    <label class="formBoxes"> Search a City: </label>
+                    <input class="formControl" type="text" id="enterCity" placeholder="Austin">
+                    <button class="btn btn-primary" id="searchBtn"> search </button>
+                </form>
+            </div>
+            <div class="">
+                <ul class="list-group" id="searchHistory">
+                    <!-- searched city will be displayed here -->
+                </ul>
+            </div>
+        </div>
+        
+        <div class="col-12 col-md-8" id="weatherContent">
+            <div class="">
+                <div id="citydetail">
+                    
+                  <!-- current city will be displayed here -->
+                </div>
+            </div>
+            <div>
+                <div class="row pl-2">
+                    <h3>5-Day Foreecast:</h3>
+                </div>
+                <div id="fiveDays" class="row pl-2">
+                    <!-- add 5 day forecast info here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1d37754851.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="assets/scripts/script.js"></script>
+</body>
+</html>
